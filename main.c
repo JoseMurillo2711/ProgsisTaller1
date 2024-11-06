@@ -70,9 +70,9 @@ int main() {
             }
             case 6: {
                 float base, altura, lado1, lado2, lado3;
-                printf("Ingrese la base y altura del triángulo: ");
+                printf("Ingrese la base y altura del triángulo (separado por un espacio): ");
                 scanf("%f %f", &base, &altura);
-                printf("Ingrese los tres lados del triángulo: ");
+                printf("Ingrese los tres lados del triángulo (separado por un espacio): ");
                 scanf("%f %f %f", &lado1, &lado2, &lado3);
                 area = areaTriangulo(base, altura);
                 perimetro = perimetroTriangulo(lado1, lado2, lado3);
@@ -81,7 +81,7 @@ int main() {
             }
             case 7: {
                 float base, altura, lado;
-                printf("Ingrese la base y altura del paralelogramo: ");
+                printf("Ingrese la base y altura del paralelogramo (separado por un espacio): ");
                 scanf("%f %f", &base, &altura);
                 printf("Ingrese el lado del paralelogramo: ");
                 scanf("%f", &lado);
@@ -101,7 +101,7 @@ int main() {
             }
             case 9: {
                 float base, altura;
-                printf("Ingrese la base y altura del rectángulo: ");
+                printf("Ingrese la base y altura del rectángulo (separado por un espacio): ");
                 scanf("%f %f", &base, &altura);
                 area = areaRectangulo(base, altura);
                 perimetro = perimetroRectangulo(base, altura);
@@ -110,7 +110,7 @@ int main() {
             }
             case 10: {
                 float diagonal1, diagonal2, lado;
-                printf("Ingrese las diagonales del rombo: ");
+                printf("Ingrese las diagonales del rombo (separado por un espacio): ");
                 scanf("%f %f", &diagonal1, &diagonal2);
                 printf("Ingrese el lado del rombo: ");
                 scanf("%f", &lado);
@@ -121,9 +121,9 @@ int main() {
             }
             case 11: {
                 float baseMayor, baseMenor, altura, lado1, lado2;
-                printf("Ingrese las bases y altura del trapecio: ");
+                printf("Ingrese las bases y altura del trapecio (BaseMayor BaseMenor Altura): ");
                 scanf("%f %f %f", &baseMayor, &baseMenor, &altura);
-                printf("Ingrese los otros dos lados del trapecio: ");
+                printf("Ingrese los otros dos lados del trapecio (separado por un espacio): ");
                 scanf("%f %f", &lado1, &lado2);
                 area = areaTrapecio(baseMayor, baseMenor, altura);
                 perimetro = perimetroTrapecio(lado1, lado2, baseMayor, baseMenor);
@@ -142,7 +142,7 @@ int main() {
             case 13: {
                 float lado, apotema;
                 int numeroLados;
-                printf("Ingrese el número de lados, la longitud del lado y la apotema del polígono regular: ");
+                printf("Ingrese el número de lados, la longitud del lado y la apotema del polígono regular (separado por un espacio): ");
                 scanf("%d %f %f", &numeroLados, &lado, &apotema);
                 area = areaPoligonoRegular(lado, numeroLados, apotema);
                 perimetro = perimetroPoligonoRegular(lado, numeroLados);
