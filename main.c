@@ -5,6 +5,7 @@ int main() {
     int figura;
     int opcion = 1;
     float superficie, volumen;
+    float area, perimetro;
 
     while (opcion) {
         mostrarOpciones();

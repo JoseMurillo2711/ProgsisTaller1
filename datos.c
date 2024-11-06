@@ -19,7 +19,7 @@ void mostrarResultadosFiguras(float superficie, float volumen) {
     printf("\nResultados:\n");
     printf("Superficie: %.2f\n", superficie);
     printf("Volumen: %.2f\n", volumen);
-    printf("\n");
+    printf("\n");
 }
 
 void mostrarResultadosFiguras2D(float area, float perimetro) {
